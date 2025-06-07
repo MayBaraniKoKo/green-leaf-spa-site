@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,69 +16,75 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 85 31% 35%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 45 31% 85%;
+    --secondary-foreground: 85 31% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 60 9% 96%;
+    --muted-foreground: 85 10% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 45 31% 75%;
+    --accent-foreground: 85 31% 25%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 60 9% 90%;
+    --input: 60 9% 90%;
+    --ring: 85 31% 35%;
 
     --radius: 0.5rem;
 
+    /* Olive Green Theme Colors */
+    --olive-50: 85 40% 95%;
+    --olive-100: 85 35% 88%;
+    --olive-200: 85 30% 75%;
+    --olive-300: 85 28% 62%;
+    --olive-400: 85 26% 49%;
+    --olive-500: 85 31% 35%;
+    --olive-600: 85 35% 28%;
+    --olive-700: 85 38% 22%;
+    --olive-800: 85 40% 18%;
+    --olive-900: 85 42% 14%;
+
+    --cream-50: 45 100% 98%;
+    --cream-100: 45 67% 94%;
+    --cream-200: 45 55% 88%;
+    --cream-300: 45 50% 80%;
+
+    --earth-100: 30 20% 92%;
+    --earth-200: 30 15% 85%;
+    --earth-300: 30 12% 75%;
+
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
-
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
-
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
+    --primary: 85 31% 45%;
     --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 85 20% 20%;
     --secondary-foreground: 210 40% 98%;
-
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
+    --accent: 85 20% 25%;
     --accent-foreground: 210 40% 98%;
-
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
@@ -100,4 +107,55 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .olive-50 { color: hsl(var(--olive-50)); }
+  .olive-100 { color: hsl(var(--olive-100)); }
+  .olive-200 { color: hsl(var(--olive-200)); }
+  .olive-300 { color: hsl(var(--olive-300)); }
+  .olive-400 { color: hsl(var(--olive-400)); }
+  .olive-500 { color: hsl(var(--olive-500)); }
+  .olive-600 { color: hsl(var(--olive-600)); }
+  .olive-700 { color: hsl(var(--olive-700)); }
+  .olive-800 { color: hsl(var(--olive-800)); }
+  .olive-900 { color: hsl(var(--olive-900)); }
+
+  .bg-olive-50 { background-color: hsl(var(--olive-50)); }
+  .bg-olive-100 { background-color: hsl(var(--olive-100)); }
+  .bg-olive-200 { background-color: hsl(var(--olive-200)); }
+  .bg-olive-300 { background-color: hsl(var(--olive-300)); }
+  .bg-olive-400 { background-color: hsl(var(--olive-400)); }
+  .bg-olive-500 { background-color: hsl(var(--olive-500)); }
+  .bg-olive-600 { background-color: hsl(var(--olive-600)); }
+  .bg-olive-700 { background-color: hsl(var(--olive-700)); }
+  .bg-olive-800 { background-color: hsl(var(--olive-800)); }
+  .bg-olive-900 { background-color: hsl(var(--olive-900)); }
+
+  .bg-cream-50 { background-color: hsl(var(--cream-50)); }
+  .bg-cream-100 { background-color: hsl(var(--cream-100)); }
+  .bg-cream-200 { background-color: hsl(var(--cream-200)); }
+  .bg-cream-300 { background-color: hsl(var(--cream-300)); }
+
+  .bg-earth-100 { background-color: hsl(var(--earth-100)); }
+  .bg-earth-200 { background-color: hsl(var(--earth-200)); }
+  .bg-earth-300 { background-color: hsl(var(--earth-300)); }
+
+  .text-olive-50 { color: hsl(var(--olive-50)); }
+  .text-olive-100 { color: hsl(var(--olive-100)); }
+  .text-olive-200 { color: hsl(var(--olive-200)); }
+  .text-olive-300 { color: hsl(var(--olive-300)); }
+  .text-olive-400 { color: hsl(var(--olive-400)); }
+  .text-olive-500 { color: hsl(var(--olive-500)); }
+  .text-olive-600 { color: hsl(var(--olive-600)); }
+  .text-olive-700 { color: hsl(var(--olive-700)); }
+  .text-olive-800 { color: hsl(var(--olive-800)); }
+  .text-olive-900 { color: hsl(var(--olive-900)); }
+
+  .border-olive-200 { border-color: hsl(var(--olive-200)); }
+  .border-olive-300 { border-color: hsl(var(--olive-300)); }
 }
